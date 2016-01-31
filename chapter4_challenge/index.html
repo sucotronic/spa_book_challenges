@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="imageApp">
+  <head>
+    <meta charset="utf-8">
+    <base href="/chapter4_challenge/">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+<!--    <link rel="stylesheet" href="style.css"> -->
+    <script src="controller.js"></script>
+  </head>
+  <body>
+    <div>
+      <a href="images.html#/">Nothing</a> | 
+      <a href="#/image/tree">Tree</a> | 
+      <a href="#/image/car">Car</a>
+    </div>
+    <div ng-view>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base href="/chapter5_challenge/">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="controller.js"></script>
+  </head>
+  <body ng-app="landscapinApp">
+    <section class="header">
+      Header
+    </section>
+    <nav class="navigation" ng-controller="navigationController">
+    <a ui-sref="home">Home</a>
+    <h2>SERVICES</h2>
+    <ul>
+      <li ng-repeat="service in services">
+        <a ui-sref="service({serviceId:service.state})">{{service.title}}</a>
+      </li>
+    </ul>
+    <h2>PRODUCTS</h2>
+    <ul>
+      <li ng-repeat="product in products">
+        <a ui-sref="product({productId:product.state})">{{product.title}}</a>
+      </li>
+    </ul>
+    </nav>
+    <section ui-view class="display">
+    display
+    </section>
+  </body>
+</html>

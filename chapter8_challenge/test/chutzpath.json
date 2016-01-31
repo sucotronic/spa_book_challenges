@@ -1,0 +1,13 @@
+﻿{
+    "Framework": "qunit",
+    "EnableTestFileBatching": true,
+    "TestHarnessReferenceMode": "AMD",
+    "TestHarnessLocationMode": "SettingsFileAdjacent",
+    "References" : [
+        {"Path" : "require.js" }, 
+        {"Path" : "main.js" }
+    ],
+    "Tests" : [
+      {"Path": "survey"}
+    ]
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="libraryApp">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!--    <link rel="stylesheet" href="style.css"> -->
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="libraryController">
+    <div>
+      <div>
+        Library: {{library.name}}<br>
+        Address: {{library.address}}<br>
+        Phone: {{library.phone}}
+      </div>
+      <div>  
+        User logged: {{user.name}}      
+      </div>      
+    </div>
+    <ul>
+      <li ng-repeat="book in books">
+      {{book.title}}<br>
+      {{book.author}}<br>
+      {{book.desc}}
+      </li>
+    </ul>
+  </body>
+</html>

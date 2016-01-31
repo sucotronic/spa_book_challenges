@@ -1,0 +1,24 @@
+﻿<div id="voting">
+  <ul>
+  <% data.each(function(item) { %>  
+    <li>
+      <input type="radio" name="vote" 
+        id="vote-<%= item.get("id") %>"
+        value=<%= item.get("id") %>>
+      <label for="vote-<%= item.get("id") %>"><%= item.get("name") %></label>
+    </li> 
+  <% }); %>
+  </ul>
+  <button class="vote-button">Vote</button>
+  <button class="results-button">View results</button>
+</div>
+<div id="results">
+  <ul>
+  <% data.each(function(item) { %>  
+    <li>
+      <%= item.get("votes") %> - <%= item.get("name") %>
+    </li>
+  <% }); %>
+  </ul>
+  <button class="return-button">Back to results</button>
+</div>

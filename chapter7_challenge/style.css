@@ -1,0 +1,19 @@
+.header {
+    background-color: red;
+    height: 45px;
+    padding: 10px;
+}
+.navigation {
+    background-color: blue;
+    width: 300px;
+    float: left;
+    height: 450px;
+    color: white;
+}
+.navigation a {
+    color:white;
+}
+.display {
+    background-color:green;
+    height: 450px;
+}
